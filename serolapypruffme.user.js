@@ -12,8 +12,11 @@
 (function(){
 	//вебинар
 	if (document.location.pathname == '/webinar/'){
-		$.get('https://raw.githubusercontent.com/Serolapy/SerolapyPruffmeMod/master/pages/webinar.js', function(data){
-			new Function(data)();
-		});
+        window.onload = function () {
+		    $.get('https://raw.githubusercontent.com/Serolapy/SerolapyPruffmeMod/master/pages/webinar.js', function(data){
+				new Function(data)();
+				console.log('Serolapy Pruffme Mod готов.')
+            });
+        }
 	}
 })();
