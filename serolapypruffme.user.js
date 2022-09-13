@@ -12,7 +12,7 @@
 (function(){
 	//вебинар
 	if (document.location.pathname == '/webinar/'){
-		$.get('', function(data){
+		$.get('https://raw.githubusercontent.com/Serolapy/SerolapyPruffmeMod/master/pages/webinar.js', function(data){
 			new Function(data)();
 		});
 	}
